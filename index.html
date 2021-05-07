@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seguros No Pagamos Cooperativa</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="centrado formulario">
+      <form>
+        <h2 class="center-text">Formulario de Contacto</h2>
+
+        <!-- Formulario de ingreso -->
+        <div class="mb-3">
+          <label class="form-label"></label>
+          <input type="text" class="form-control" id="name_id" placeholder="Nombre" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label"></label>
+          <input type="text" class="form-control" id="apellido_id" placeholder="Apellido" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label"></label>
+          <input type="text" class="form-control" id="dni_id" placeholder="DNI" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label"></label>
+          <input type="email" class="form-control" id="email_id" placeholder="Correo Electrónico" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label"></label>
+          <input type="tel" class="form-control" id="telefono_id" placeholder="Teléfono" pattern="[0-9]{4}-[0-9]{4}" />
+        </div>
+
+        <!-- select de plan y resultado -->
+        <select class="form-select" aria-label="Default select example" onChange="preciosSeguros()" id="select">
+          <option selected value="">Selecionar el tipo de seguro</option>
+          <option value="basico">Básico</option>
+          <option value="intermedio">Intermedio</option>
+          <option value="premium">Premium</option>
+        </select>
+        <br>
+        <p id="precio"></p>
+
+        <!--Botones Aceptar y Cancelar-->
+        <div>
+          <button type="submit" class="btn btn-success">Aceptar</button>
+          <button type="submit" class="btn btn-danger">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+  </script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
